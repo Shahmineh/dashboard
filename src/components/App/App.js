@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import './App.css';
+import './App.scss';
 import MainNav from '../MainNav/MainNav';
 import Main from '../Main/Main';
 

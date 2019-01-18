@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
-import './Main.css';
+import './Main.scss';
 
 class Main extends Component {
   render() {
