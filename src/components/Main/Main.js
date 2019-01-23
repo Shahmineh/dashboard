@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
 import './Main.scss';
+import GoogleSearch from '../GoogleSearch/GoogleSearch';
 
 class Main extends Component {
   render() {
     return(
       <div>
-        Content
+        <GoogleSearch />
       </div>
     );
   }
 }
 
 export default withRouter(Main);
+

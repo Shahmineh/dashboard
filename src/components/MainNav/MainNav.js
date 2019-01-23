@@ -41,7 +41,7 @@ class MainNav extends Component {
     return(
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/" className="text-center logo">My dashboard</NavbarBrand>
+          <NavbarBrand href="/" className="logo">My dashboard</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
