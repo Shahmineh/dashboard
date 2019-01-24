@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 
+import HelloWidget from'../Widgets/HelloWidget/HelloWidget';
+
 import './Main.scss';
 
 class Main extends Component {
   render() {
     return(
       <div>
-        Content
+        <HelloWidget />
       </div>
     );
   }
