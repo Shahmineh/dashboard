@@ -12,13 +12,14 @@ class Main extends Component {
   render() {
     return(
       <Container className="container">
-        <Row>
-          <Col>
+        <Row style={{ paddingLeft: '0', paddingRight: '0' }}>
+          <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
             <HelloWidget />
           </Col>
-          <Col>
+          <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
             <Clock />
           </Col>
+
         </Row>
       </Container>
     );
