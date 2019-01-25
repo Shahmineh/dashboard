@@ -7,6 +7,7 @@
     "express": "^4.16.4",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
+    "react-dazzle": "^1.4.0",
     "react-dom": "^16.7.0",
     "react-icons": "^3.3.0",
     "react-router-dom": "^4.3.1",
