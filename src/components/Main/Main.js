@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 // Widgets
 import Google from'../Widgets/Google/Google';
-import Clock from '../Widgets/Clock/Clock';
+import Youtube from '../Widgets/Youtube/Youtube';
 
 import './Main.scss';
 
@@ -17,7 +17,7 @@ class Main extends Component {
             <Google />
           </Col>
           <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
-            <Clock />
+            <Youtube />
           </Col>
 
         </Row>
