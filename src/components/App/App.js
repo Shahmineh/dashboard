@@ -9,7 +9,7 @@ import Main from '../Main/Main';
 class App extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: '#41464c' }}>
+      <div className="app" style={{ backgroundColor: '#41464c' }}>
         <MainNav /> 
         <Main />
       </div>
