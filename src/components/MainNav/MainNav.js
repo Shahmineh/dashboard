@@ -6,8 +6,8 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
+  // NavItem,
+  // NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -19,7 +19,8 @@ import {
 } from 'reactstrap';
 
 import './MainNav.scss';
-
+import { FaGoogle } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 class MainNav extends Component {
   constructor(props) {
@@ -45,12 +46,12 @@ class MainNav extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="/components/">Components</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
+              </NavItem> */}
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Log in
@@ -75,8 +76,12 @@ class MainNav extends Component {
                   <Button className="submit-btn">
                     Submit
                   </Button>
-                  <Button>
-
+                    
+                  <Button className="m-1 google-btn">
+                    <FaGoogle />
+                  </Button>
+                  <Button className="m-1 git-btn">
+                    <FaGithub />
                   </Button>
                 </DropdownMenu>
               </UncontrolledDropdown>
