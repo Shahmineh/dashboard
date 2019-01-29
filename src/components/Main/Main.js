@@ -3,8 +3,8 @@ import { withRouter } from 'react-router';
 import { Container, Row, Col } from 'reactstrap';
 
 // Widgets
-import HelloWidget from'../Widgets/HelloWidget/HelloWidget';
-import Clock from '../Widgets/Clock/Clock';
+import Google from'../Widgets/Google/Google';
+import Youtube from '../Widgets/Youtube/Youtube';
 
 import './Main.scss';
 
@@ -14,10 +14,10 @@ class Main extends Component {
       <Container className="container">
         <Row style={{ paddingLeft: '0', paddingRight: '0' }}>
           <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
-            <HelloWidget />
+            <Google />
           </Col>
           <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
-            <Clock />
+            <Youtube />
           </Col>
 
         </Row>
@@ -27,3 +27,4 @@ class Main extends Component {
 }
 
 export default withRouter(Main);
+
