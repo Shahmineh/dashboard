@@ -1,4 +1,15 @@
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  height: 92vh;
+
+  .weather {
+    text-align: center;
+    height: 170px;
+    width: 383px;
+    background-color: #35393d;
+    margin: 5px;
+    color: #fff;
+    padding: 5px;
+  }
 }
