@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
+import { Container, Row, Col } from 'reactstrap';
+// import { withRouter } from 'react-router';
+
+// Widgets
+import Google from'../Widgets/Google/Google';
+import Youtube from '../Widgets/Youtube/Youtube';
 
 import './App.scss';
 import MainNav from '../MainNav/MainNav';
@@ -11,10 +16,25 @@ class App extends Component {
     return (
       <div className="app" style={{ backgroundColor: '#41464c' }}>
         <MainNav /> 
-        <Main />
+        <Container className="container">
+          <Row style={{ paddingLeft: '0', paddingRight: '0' }}>
+            <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
+              <Google />
+            </Col>
+            <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
+              <Youtube />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Main />
+            </Col>
+          </Row>
+        </Container>
+
       </div>
     );
   }
 }
 
-export default withRouter(App);
+export default App;

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
+// import { withRouter } from 'react-router';
 import { Container, Row, Col } from 'reactstrap';
 
-// Widgets
-import Google from'../Widgets/Google/Google';
-import Youtube from '../Widgets/Youtube/Youtube';
+// // Widgets
+// import Google from'../Widgets/Google/Google';
+// import Youtube from '../Widgets/Youtube/Youtube';
 
 import Titles from '../Widgets/Weather/Titles';
 import Form from '../Widgets/Weather/Form';
@@ -25,7 +25,7 @@ class Main extends Component {
   render() {
     return(
       <Container className="container">
-        <Row style={{ paddingLeft: '0', paddingRight: '0' }}>
+        {/* <Row style={{ paddingLeft: '0', paddingRight: '0' }}>
           <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
             <Google />
           </Col>
@@ -33,7 +33,7 @@ class Main extends Component {
             <Youtube />
           </Col>
           
-        </Row>
+        </Row> */}
         <Row>
           <Col>
             <div className="weather">
@@ -48,6 +48,6 @@ class Main extends Component {
   }
 }
 
-export default withRouter(Main, Form);
+export default Form;
 
 
