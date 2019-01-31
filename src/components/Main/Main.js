@@ -32,8 +32,11 @@ class Main extends Component {
           <Col style={{ paddingLeft: '0', paddingRight: '0' }}>
             <Youtube />
           </Col>
+          
+        </Row>
+        <Row>
           <Col>
-            <div>
+            <div className="weather">
               <Titles />
               <Form loadWeather={this.getWeather} />
               <Weather />
